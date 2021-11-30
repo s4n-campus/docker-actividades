@@ -1,0 +1,6 @@
+docker pull mongo-express 
+docker pull node
+docker pull jenkins
+docker images
+docker rmi mongo-express
+docker rmi -f $(docker images -a -q)
