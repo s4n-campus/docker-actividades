@@ -1,0 +1,8 @@
+Puedes eliminar los valores ":${VERSION}" para descargar la versión "latest" o reemplazarlos por el número de la versión.
+
+docker pull mongo-express:${VERSION}
+docker pull node:${VERSION}
+docker pull jenkins:${VERSION}
+docker images
+docker rmi mongo-express
+docker rmi -f $(docker images -a -q)
