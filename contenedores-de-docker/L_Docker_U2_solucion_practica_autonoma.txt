@@ -1,6 +1,6 @@
 Esta es la solución:
 
-docker pull wordpress
+docker pull wordpress:php7.4-fpm-alpine
 docker pull prestashop/prestashop
 docker run -it --rm -p 8080:80 wordpress
 docker run -it --rm -e ALLOW_EMPTY_PASSWORD=”yes” prestashop
